@@ -11,13 +11,13 @@ const themes = [
   {
     name: 'Flex theme',
     description: '',
-    image: 'src/assets/flextheme.png',
+    image: '/assets/flextheme.png',
     selected: false,
   },
   {
     name: 'Chic theme',
     description: '',
-    image: 'src/assets/chictheme.png',
+    image: '/assets/chictheme.png',
     selected: false,
   },
 ];

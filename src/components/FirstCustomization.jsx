@@ -73,7 +73,7 @@ const FirstCustomization = () => {
             </div>
           </div>
           <div className="flex-1 flex items-center justify-center bg-green-100 rounded">
-            <img src="src/assets/firstcustomization.png" alt="Category Diagram" />
+            <img src="/assets/firstcustomization.png" alt="Category Diagram" />
           </div>
         </div>
       </div>
