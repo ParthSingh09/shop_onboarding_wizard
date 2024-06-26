@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Shop Onboarding Wizard
 
 Shop Onboarding Wizard is a front-end web application designed to streamline the process of onboarding new users to a shop platform. This application utilizes modern web technologies to provide an optimized and user-friendly experience.
@@ -116,4 +115,3 @@ If you have any questions or need further assistance, feel free to contact me:
 ---
 
 Feel free to open issues or contribute to the project. Your feedback and contributions are always welcome!
->>>>>>> fa4e652 (Fixing Errors)
