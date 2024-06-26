@@ -15,7 +15,7 @@ const SecondCustomization = () => {
   const [gstRate, setGstRate] = useState("");
   const [shippingCharges, setShippingCharges] = useState("");
   const [stockLevel, setStockLevel] = useState("");
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -38,52 +38,52 @@ const SecondCustomization = () => {
     setNetPrice(netPriceValue);
   }, [listPrice, discountPercentage, gstRate, shippingCharges]);
 
-    const handleBack = () => {
-        navigate('/first-customization');
-    };
+  const handleBack = () => {
+    navigate("/first-customization");
+  };
 
-    const handleNext = () => {
-        if(productName === '') {
-            alert('Please enter a product name');
-            return;
-        }
-        if(productDescription === '') {
-            alert('Please enter a product description');
-            return;
-        }
-        if(!imageUrl) {
-            alert('Please upload a product image');
-            return;
-        }
-        if(!listPrice) {
-            alert('Please enter a list price');
-            return;
-        }
-        if(!discountPercentage) {
-            alert('Please enter a discount percentage');
-            return;
-        }
-        if(!gstRate) {
-            alert('Please enter a GST rate');
-            return;
-        }
-        if(!stockLevel) {
-            alert('Please enter a stock level');
-            return;
-        }
-        localStorage.setItem('productName', productName);
-        localStorage.setItem('productDescription', productDescription);
-        localStorage.setItem('imageUrl', imageUrl);
-        localStorage.setItem('skuCode', skuCode);
-        localStorage.setItem('HsnCode', HsnCode);
-        localStorage.setItem('listPrice', listPrice);
-        localStorage.setItem('discountPercentage', discountPercentage);
-        localStorage.setItem('gstRate', gstRate);
-        localStorage.setItem('shippingCharges', shippingCharges);
-        localStorage.setItem('stockLevel', stockLevel);
-        localStorage.setItem('netPrice', netPrice);
-        navigate('/third-customization');
-    };
+  const handleNext = () => {
+    if (productName === "") {
+      alert("Please enter a product name");
+      return;
+    }
+    if (productDescription === "") {
+      alert("Please enter a product description");
+      return;
+    }
+    if (!imageUrl) {
+      alert("Please upload a product image");
+      return;
+    }
+    if (!listPrice) {
+      alert("Please enter a list price");
+      return;
+    }
+    if (!discountPercentage) {
+      alert("Please enter a discount percentage");
+      return;
+    }
+    if (!gstRate) {
+      alert("Please enter a GST rate");
+      return;
+    }
+    if (!stockLevel) {
+      alert("Please enter a stock level");
+      return;
+    }
+    localStorage.setItem("productName", productName);
+    localStorage.setItem("productDescription", productDescription);
+    localStorage.setItem("imageUrl", imageUrl);
+    localStorage.setItem("skuCode", skuCode);
+    localStorage.setItem("HsnCode", HsnCode);
+    localStorage.setItem("listPrice", listPrice);
+    localStorage.setItem("discountPercentage", discountPercentage);
+    localStorage.setItem("gstRate", gstRate);
+    localStorage.setItem("shippingCharges", shippingCharges);
+    localStorage.setItem("stockLevel", stockLevel);
+    localStorage.setItem("netPrice", netPrice);
+    navigate("/third-customization");
+  };
 
   return (
     <div className="flex lg:h-screen md:flex-col lg:flex-row">
@@ -307,11 +307,8 @@ const SecondCustomization = () => {
             {productDescription || "Product description"}
           </p>
           <p className="text-gray-900 font-bold">
-            {" "}
-            <span className="line-through text-gray-600">
-              Rs. {listPrice}
-            </span>{" "}
-            Rs. {netPrice || "Product Price"}
+            Rs. <span className="line-through text-gray-600">{listPrice}</span>{" "}
+            {netPrice || "Product Price"}
           </p>
         </div>
       </div>
