@@ -5,7 +5,7 @@ const themes = [
   {
     name: 'Bags theme',
     description: '(recommended)',
-    image: 'src/assets/bagtheme.png',
+    image: '/assets/bagtheme.png',
     selected: true,
   },
   {
