@@ -170,7 +170,7 @@ const SecondCustomization = () => {
               <input
                 type="text"
                 placeholder="eg - PROD0001"
-                value={skuCode}
+                value={HsnCode}
                 onChange={(e) => setHsnCode(e.target.value)}
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2"
               />
